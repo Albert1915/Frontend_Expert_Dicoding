@@ -1,0 +1,58 @@
+{
+  "id": "restaurant-list-pwa-2",
+  "start_url": "./index.html",
+  "name": "Restaurant List",
+  "short_name": "Resto List",
+  "description": "Free Recommendation for you",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#43567f",
+  "screenshots": [
+      {
+       "src": "/icons/Dekstop.png",
+        "sizes": "640x320",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "VinCook Dekstop"
+      },
+      {
+          "src": "/icons/Mobile.png",
+        "sizes": "320x640",
+        "type": "image/png",
+        "form_factor": "narrow",
+        "label": "VinCook Mobile"
+      }
+  ],
+  "icons": [
+    {
+      "src": "/icons/image-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/image-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/image-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/image-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/image-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

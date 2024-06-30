@@ -1,0 +1,143 @@
+.detail-item {
+    padding: 20px;
+    background-color: #FFF8DB;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto; /* Center the detail item */
+    text-align: justify;
+}
+
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.detail-item .jumbotron {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.detail-item .jumbotron img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-item .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.detail-item .header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+
+.detail-item .favorite-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #ff6347; /* Tomato color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detail-item .favorite-button:hover {
+    background-color: #ff4500; /* Darker tomato color */
+}
+
+.detail-item .section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin: 10px 0;
+}
+
+.detail-item strong {
+    color: black;
+}
+
+.detail-item .categories,
+.detail-item .menus,
+.detail-item .reviews {
+    margin: 20px 0;
+}
+
+.detail-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.detail-item .categories span,
+.detail-item .menus span {
+    display: inline-block;
+    background-color: #088395;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.detail-item .reviews-container {
+    background-color: #088395;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.detail-item .reviews-container h3 {
+    color: white;
+}
+
+.detail-item .reviews div {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item .reviews strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.detail-item .reviews span {
+    font-size: 14px;
+    color: black;
+}

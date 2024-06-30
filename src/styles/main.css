@@ -1,0 +1,301 @@
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Outfit';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EBF4F6;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #088395;
+    color: white;
+    padding: 12px; /* Tambahkan padding lebih besar untuk memperbesar target sentuhan */
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/*  Navigation Bar and Drawer */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #088395;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    margin: 0;
+}
+
+nav .nav-anchor {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav .nav-anchor a {
+    font-size: 25px;
+    padding: 15px 20px; /* Contoh penyesuaian padding untuk memperbesar target sentuhan */
+    color: #e9f4f6;
+    height: 44px;
+    width: auto;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-anchor a:hover,
+nav .nav-anchor a:focus {
+    color: #37B7C3; /* Warna teks saat dihover atau difokuskan */
+}
+
+#menuButton {
+    font-size: 35px;
+    padding: 10px; /* Tambahkan padding untuk menambah dimensi tombol */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #088395;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.drawer ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.drawer ul li a:hover,
+.drawer ul li a:focus {
+    background-color: #37B7C3; /* Warna latar belakang saat dihover atau difokuskan */
+}
+
+/* Jumbotron */
+.jumbotron img {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Lists */
+.resto-list {
+    padding: 10px;
+    display: grid;
+    gap: 20px; /* Adjust the gap size as needed */
+    justify-content: center; /* Centers the grid within the container */
+}
+
+.resto-item {
+    background-color: #37B7C3;
+    width: 100%;
+    max-width: 320px;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resto-item:hover,
+.resto-item:focus {
+    transform: translateY(-5px); /* Menggeser item ke atas saat hover/focus */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Efek bayangan yang lebih besar */
+}
+
+
+.resto-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.resto-item .resto-info-1 {
+    flex-grow: 1;
+}
+
+.resto-item .resto-info-1 p {
+    margin: 15px;
+    text-align: justify;
+}
+
+.resto-item .resto-info-1 .name {
+    font-weight: 600;
+}
+
+.resto-item .resto-info-1 .description {
+    font-size: 12px;
+}
+
+.resto-item .resto-info-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 500;
+    margin: 15px;
+    margin-top: auto;
+    /* Pushes this element to the bottom */
+}
+
+.resto-item .resto-info-2 .city {
+    font-weight: 600;
+}
+
+.resto-item .resto-info-2 .rating {
+    color: #EBF4F6;
+}
+
+.resto-item .resto-info-3 {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    min-height: 44px;
+    width: auto;
+    display: inline-block;
+}
+
+.resto-item .resto-info-3 button {
+    font-weight: 200;
+    min-height: 44px;
+    width: auto;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #96C9F4; /* Border warna biru */
+    background-color: #96C9F4; /* Latar belakang warna biru */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Efek transisi untuk hover */
+    border-radius: 8px; /* Menambahkan sudut border yang membulat */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.resto-item .resto-info-3 button:hover {
+    text-decoration: underline;
+    background-color: #0F67B1; /* Mengubah latar belakang menjadi biru gelap saat dihover */
+    color: #fff; /* Mengubah warna teks menjadi putih saat dihover */
+    border-color: transparent; /* Menghilangkan border saat dihover */
+    border-radius: 20px; /* Menjaga sudut border yang membulat saat dihover */
+}
+
+.resto-item .resto-info-3 button:focus {
+    outline: 2px solid #0F67B1; /* Menambahkan outline biru gelap saat difokuskan */
+    outline-offset: 2px; /* Menambahkan jarak antara outline dan elemen */
+    text-decoration: underline; /* Menambahkan garis bawah */
+    background-color: #0F67B1; /* Mengubah latar belakang menjadi biru gelap saat difokuskan */
+    color: #fff; /* Mengubah warna teks menjadi putih saat difokuskan */
+    border-color: transparent; /* Menghilangkan border saat difokuskan */
+    border-radius: 8px; /* Menjaga sudut border yang membulat saat difokuskan */
+}
+
+
+
+
+
+footer {
+    background-color: #088395;
+    color: #e9f4f6;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries for responsive grid */
+@media screen and (min-width: 1200px) {
+    .resto-list {
+        grid-template-columns: repeat(3, 0.4fr);
+        justify-items: center;
+        /* Centers the grid within the container */
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .resto-list {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        /* Centers the grid within the container */
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .resto-list {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        /* Centers the grid within the container */
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .resto-list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        /* Centers the grid within the container */
+    }
+}
+
+/* Footer */
+@media screen and (max-width: 1200px) {
+    nav .nav-anchor {
+        display: flex;
+    }
+
+    #menuButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .nav-anchor {
+        display: flex;
+    }
+
+    #menuButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav .nav-anchor {
+        display: none;
+    }
+
+    #menuButton {
+        display: block;
+    }
+}
